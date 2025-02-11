@@ -359,13 +359,20 @@ RESPONSIVE DESIGN - MOBILE ADJUSTMENTS
 */
 @media (max-width: 600px) {
   nav ul {
-    flex-direction: column; /* puts menu items horizontal */
-    align-items: flex-end;
-    margin-right: 1rem;
+    display: flex; /* Ensures items align properly */
+    flex-direction: column; /* Stacks menu items vertically */
+    align-items: flex-start; /* Aligns items to the left */
+    padding-left: 1rem; /* Adds spacing on the left */
+    margin-right: 0; /* Removes extra margin */
   }
 
   nav ul li {
-    margin: 10px 0;
+    margin: 8px 0; /* Reduces spacing for a cleaner look */
+  }
+
+  nav ul li a {
+    display: block; /* Ensures clickable area is full width */
+    padding: 10px 0; /* Adds vertical padding */
   }
 
   main {
@@ -374,24 +381,18 @@ RESPONSIVE DESIGN - MOBILE ADJUSTMENTS
   }
 }
 
-@media (max-width: 900px) {
-  .project-media img,
-  .project-media video {
-    max-width: 100%; /* responsiveness on smaller screens */
-  }
-}
-
-/* Responsive Design - Mobile Version */
+/* Responsive Design for Medium Screens */
 @media (max-width: 768px) {
   .page-header {
-    height: 100px; /* reduce height for smaller screens */
+    height: 100px; /* Reduce height for smaller screens */
     padding: 0.5rem;
   }
 
   .page-header h1 {
-    font-size: 1.5rem; /* smaller font size for mobile */
-    margin-bottom: 5px; /* adjust spacing */
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    margin-bottom: 5px; /* Adjust spacing */
   }
 }
+
 
 
