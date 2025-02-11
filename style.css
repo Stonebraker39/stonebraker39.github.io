@@ -360,37 +360,15 @@ CONTACT PAGE STYLES
 RESPONSIVE DESIGN - MOBILE ADJUSTMENTS
 ======================================
 */
-@media screen and (max-width: 600px) {
-
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-    padding: 1rem 0;
-    z-index: 1000;
-  }
-
+@media (max-width: 600px) {
   nav ul {
-    display: flex; /* items align properly */
-    flex-direction: column; /* stacks menu items vertically */
-    align-items: flex-end; /* aligns items to the right */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 1rem;
   }
-
   nav ul li {
-    margin: 8px 0; /* reduces spacing for a cleaner look */
+    margin: 10px 0;
   }
-
-  nav ul li a {
-    display: block; /* clickable area is full width */
-    padding: 10px 0; /* adds vertical padding */
-  }
-
   main {
     margin: 1rem;
     padding: 1rem;
