@@ -380,3 +380,18 @@ RESPONSIVE DESIGN - MOBILE ADJUSTMENTS
     max-width: 100%; /* Ensures responsiveness on smaller screens */
   }
 }
+
+/* Responsive Design - Mobile Version */
+@media (max-width: 768px) {
+  .page-header {
+    height: 100px; /* reduce height for smaller screens */
+    padding: 0.5rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem; /* smaller font size for mobile */
+    margin-bottom: 5px; /* adjust spacing */
+  }
+}
+
+
