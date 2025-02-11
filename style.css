@@ -361,7 +361,8 @@ RESPONSIVE DESIGN - MOBILE ADJUSTMENTS
   nav ul {
     flex-direction: row; /* puts menu items horizontally */
     align-items: center;
-    
+    gap: 20px;
+
   }
 
   nav ul li {
