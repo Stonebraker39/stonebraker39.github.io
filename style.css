@@ -35,6 +35,11 @@ header {
   padding: 1rem 0; /* adds spacing */
 }
 
+.page-header{
+  text-align: center;
+}
+
+
 /*
 ====================================
 NAVIGATION MENU STYLES
