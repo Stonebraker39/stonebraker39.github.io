@@ -359,9 +359,9 @@ RESPONSIVE DESIGN - MOBILE ADJUSTMENTS
 */
 @media (max-width: 600px) {
   nav ul {
-    flex-direction: column; /* Stacks menu items vertically */
-    align-items: flex-end;
-    margin-right: 1rem;
+    flex-direction: row; /* puts menu items horizontally */
+    align-items: center;
+    
   }
 
   nav ul li {
