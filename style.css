@@ -359,10 +359,8 @@ RESPONSIVE DESIGN - MOBILE ADJUSTMENTS
 */
 @media (max-width: 600px) {
   nav ul {
-    flex-direction: row; /* puts menu items horizontally */
-    align-items: center;
-    gap: 20px;
-
+    flex-direction: column; /* puts menu items horizontal */
+    align-items: flex-end;
   }
 
   nav ul li {
@@ -378,7 +376,7 @@ RESPONSIVE DESIGN - MOBILE ADJUSTMENTS
 @media (max-width: 900px) {
   .project-media img,
   .project-media video {
-    max-width: 100%; /* Ensures responsiveness on smaller screens */
+    max-width: 100%; /* responsiveness on smaller screens */
   }
 }
 
