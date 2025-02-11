@@ -360,7 +360,7 @@ CONTACT PAGE STYLES
 RESPONSIVE DESIGN - MOBILE ADJUSTMENTS
 ======================================
 */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
 
   nav {
