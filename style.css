@@ -180,7 +180,8 @@ grid-based hobbies section
 }
 
 .hobby-item {
-  background: #544C4A;
+  background: linear-gradient(135deg, #f4f4f4, #e0e0e0); /* smooth transition of colors. took idea from website */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* took from same website. transition effect */
   border-radius: 12px; /* rounds corners for softer appearance */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* gives a shadow effect */
   padding: 1.5rem; /* makes sure content doesn't touch the edges */
