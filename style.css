@@ -362,21 +362,24 @@ RESPONSIVE DESIGN - MOBILE ADJUSTMENTS
 */
 @media (max-width: 600px) {
 
-  .page-header{
-    height: auto;
-    padding: 0.5rem;
-  }
 
   nav {
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    padding: 1rem 0;
+    z-index: 1000;
   }
 
   nav ul {
-    display: flex; /* tems align properly */
+    display: flex; /* items align properly */
     flex-direction: column; /* stacks menu items vertically */
-    align-items: flex-start; /* aligns items to the left */
-    padding-left: 1rem; /* adds spacing on the left */
-    margin-right: 0; /* removes extra margin */
+    align-items: flex-end; /* aligns items to the right */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
 
   nav ul li {
