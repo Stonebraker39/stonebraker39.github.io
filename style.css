@@ -375,18 +375,5 @@ RESPONSIVE DESIGN - MOBILE ADJUSTMENTS
   }
 }
 
-/* Responsive Design for Medium Screens */
-@media (max-width: 768px) {
-  .page-header {
-    height: 100px; /* Reduce height for smaller screens */
-    padding: 0.5rem;
-  }
-
-  .page-header h1 {
-    font-size: 1.5rem; /* Smaller font size for mobile */
-    margin-bottom: 5px; /* Adjust spacing */
-  }
-}
-
 
 
