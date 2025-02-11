@@ -35,8 +35,11 @@ header {
   padding: 1rem 0; /* adds spacing */
 }
 
-.page-header{
+.page-header {
+  position: relative;
+  z-index: 10;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 
@@ -358,21 +361,31 @@ RESPONSIVE DESIGN - MOBILE ADJUSTMENTS
 ======================================
 */
 @media (max-width: 600px) {
+
+  .page-header{
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  nav {
+    margin-top: 50px;
+  }
+
   nav ul {
-    display: flex; /* Ensures items align properly */
-    flex-direction: column; /* Stacks menu items vertically */
-    align-items: flex-start; /* Aligns items to the left */
-    padding-left: 1rem; /* Adds spacing on the left */
-    margin-right: 0; /* Removes extra margin */
+    display: flex; /* tems align properly */
+    flex-direction: column; /* stacks menu items vertically */
+    align-items: flex-start; /* aligns items to the left */
+    padding-left: 1rem; /* adds spacing on the left */
+    margin-right: 0; /* removes extra margin */
   }
 
   nav ul li {
-    margin: 8px 0; /* Reduces spacing for a cleaner look */
+    margin: 8px 0; /* reduces spacing for a cleaner look */
   }
 
   nav ul li a {
-    display: block; /* Ensures clickable area is full width */
-    padding: 10px 0; /* Adds vertical padding */
+    display: block; /* clickable area is full width */
+    padding: 10px 0; /* adds vertical padding */
   }
 
   main {
