@@ -1,0 +1,294 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+General body styles
+ */
+body {
+  font-family: Arial, sans-serif; /* sets default font */
+  line-height: 1.6; /*improves readability with line spacing*/
+  background-color: #f4f4f4;
+  color: #544C4A; /* changed the text color*/
+}
+
+header {
+  background: #544C4A;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+/* navigation menu styling */
+nav ul {
+  list-style: none; /* removes bullet points*/
+  display: flex; /* aligns items horizontally */
+  justify-content: flex-end; /* aligns navigation links to the far right */
+  margin-right: 2rem; /* adds space to the right */
+}
+
+nav ul li {
+  margin: 0 15px; /* adds space between the navigation items */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none; /* removes underline from links */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #7851A9; /* changes the color when you hover over links */
+}
+
+/* main content styling */
+main {
+  max-width: 800px;
+  margin: 2rem auto; /* centers content horizontally */
+  padding: 1rem; /* adds space inside the main container */
+  background: #fff;
+  border-radius: 8px; /* gives the border a rounded edge */
+
+}
+
+.intro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.intro h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.intro p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #544C4A;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Project Media Styling */
+
+.projects h1{
+  text-align: center;
+  margin-bottom: 2rem;/* Adds space between title and video*/
+}
+.project-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+/* Video Styling */
+.project-media video {
+  width: 100%;
+  max-width: 800px; /* Limits video width to prevent overflow */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Centering and Spacing for the Project Item */
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-details h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.project-details p {
+  margin-top: 0; /* Removes space above the paragraph */
+}
+
+/* Hobbies Page Styles */
+.hobbies {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hobby-item {
+  background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hobby-item h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.hobby-item p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.hobby-item img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Page Title Styling */
+.hobbies h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Sports Team Sub-Category Styles */
+.sports-team {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.sports-team h3 {
+  text-align: center;
+  color: #544C4A;
+  margin-bottom: 0.5rem;
+}
+
+.sports-team p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.sports-team img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Travel Gallery Page Styles */
+.travel-gallery {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.travel-gallery h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 1rem; /* Space between images */
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 1rem;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .project-media img,
+  .project-media video {
+    max-width: 100%; /* Ensures responsiveness on smaller screens */
+  }
+}
+

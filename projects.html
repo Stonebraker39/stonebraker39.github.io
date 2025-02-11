@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Jake Stonebraker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="hobbies.html" class="active">Hobbies</a></li>
+      <li><a href="travel.html" class="active">Travel Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="projects">
+    <h1>My Projects</h1>
+
+    <div class="project-item">
+      <div class="project-media">
+        <video controls>
+          <source src="esp32_demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project-details">
+        <h2>ESP32 IoT Door Monitor</h2>
+        <p>A project using an ESP32 microcontroller to monitor door and mailbox states. It sends real-time updates via MQTT when the state changes, leveraging deep sleep for energy efficiency.</p>
+      </div>
+    </div>
+
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 Jake Stonebraker. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
